@@ -27,7 +27,7 @@ items テーブル
 | catedory_id       | integer    | null: false                    |
 | condition_id      | integer    | null: false                    |
 | postage_burden_id | integer    | null: false                    |
-| consighor_id      | integer    | null: false                    |
+| prefectures_id    | integer    | null: false                    |
 | shipping_date_id  | integer    | null: false                    |
 | user              | references | null: false, foreign_key: true |
 
