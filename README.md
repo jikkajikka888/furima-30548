@@ -9,9 +9,7 @@ users テーブル
 | first_name         | string | null: false |
 | family_name_kana   | string | null: false |
 | first_name_kana    | string | null: false |
-| birth_year         | string | null: false |
-| birth_month        | string | null: false |
-| birth_day          | string | null: false |
+| birthday           | date   | null: false |
 
   Association
 
@@ -23,7 +21,7 @@ items テーブル
 
 | Column        | Type       | Options                        |
 | ------------- | -----------| ------------------------------ |
-| prodact_name  | text       | null: false                    |
+| prodact_name  | string     | null: false                    |
 | description   | text       | null: false                    |
 | price         | string     | null: false                    |
 | user          | references | null: false, foreign_key: true |
@@ -56,7 +54,7 @@ addresses テーブル
 | postal_code        | string     | null: false                    |
 | city               | string     | null: false                    |
 | house_number       | string     | null: false                    |
-| building_name      | string     | null: false                    |
+| building_name      | string     |                                |
 | phone_number       | string     | null: false                    |
 | purchases          | references | null: false, foreign_key: true |
 
