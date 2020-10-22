@@ -5,6 +5,7 @@ users テーブル
 | nickname           | string | null: false |
 | email              | string | null: false |
 | password           | string | null: false |
+| encrypted_password | string | null: false |
 | family_name        | string | null: false |
 | first_name         | string | null: false |
 | family_name_kana   | string | null: false |
@@ -61,7 +62,7 @@ addresses テーブル
 | house_number       | string     | null: false                    |
 | building_name      | string     |                                |
 | phone_number       | string     | null: false                    |
-| purchases          | references | null: false, foreign_key: true |
+| purchase           | references | null: false, foreign_key: true |
 
   Association
 
