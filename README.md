@@ -24,11 +24,11 @@ items テーブル
 | prodact_name   | string     | null: false                    |
 | description    | text       | null: false                    |
 | price          | integer    | null: false                    |
-| catedory       | string     | null: false                    |
-| condition      | string     | null: false                    |
-| postage_burden | string     | null: false                    |
-| consighor      | string     | null: false                    |
-| shipping_date  | string     | null: false                    |
+| catedory       | integer    | null: false                    |
+| condition      | integer    | null: false                    |
+| postage_burden | integer    | null: false                    |
+| consighor      | integer    | null: false                    |
+| shipping_date  | integer    | null: false                    |
 | user           | references | null: false, foreign_key: true |
 
   Association
@@ -56,7 +56,8 @@ addresses テーブル
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
 | postal_code        | string     | null: false                    |
-| city               | string     | null: false                    |
+| prefectures        | string     | null: false                    |
+| municipalities     | string     | null: false                    |
 | house_number       | string     | null: false                    |
 | building_name      | string     |                                |
 | phone_number       | string     | null: false                    |
