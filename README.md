@@ -4,7 +4,6 @@ users テーブル
 | ------------------ | ------ | ----------- |
 | nickname           | string | null: false |
 | email              | string | null: false |
-| password           | string | null: false |
 | encrypted_password | string | null: false |
 | family_name        | string | null: false |
 | first_name         | string | null: false |
