@@ -19,12 +19,17 @@ users テーブル
 
 items テーブル
 
-| Column        | Type       | Options                        |
-| ------------- | -----------| ------------------------------ |
-| prodact_name  | string     | null: false                    |
-| description   | text       | null: false                    |
-| price         | string     | null: false                    |
-| user          | references | null: false, foreign_key: true |
+| Column         | Type       | Options                        |
+| -------------- | -----------| ------------------------------ |
+| prodact_name   | string     | null: false                    |
+| description    | text       | null: false                    |
+| price          | integer    | null: false                    |
+| catedory       | string     | null: false                    |
+| condition      | string     | null: false                    |
+| postage_burden | string     | null: false                    |
+| consighor      | string     | null: false                    |
+| shipping_date  | string     | null: false                    |
+| user           | references | null: false, foreign_key: true |
 
   Association
 
@@ -38,7 +43,6 @@ purchases テーブル
 | ------------- | ----------- | ------------------------------ |
 | user          | references  | null: false, foreign_key: true |
 | item          | references  | null: false, foreign_key: true |
-| created_at    | timestamp	  | null: false                    |
 
   Association
 
